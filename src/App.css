@@ -123,8 +123,8 @@
 
 .event-status {
   position: absolute;
-  margin-top: -15%;
-  margin-left: 4%;
+  margin-top: -230px;
+  margin-left: 60px;
   background-color: aliceblue;
   padding: 0.4% 0.4%;
   border-radius: 0.3rem;
@@ -137,7 +137,211 @@
   margin-left: 12%;
 }
 
+.event-time {
+  margin-top: 0;
+}
+
 .event-title {
   margin-top: 0;
-  font-size: large;
+  font-size: larger;
+}
+
+/* detailpage */
+
+.event-detailspage {
+  display: flex;
+  gap: 10rem;
+  margin: 2% 4%;
+}
+
+.event-leftside {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 2%;
+}
+.detail-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.event-leftside p {
+  margin-top: 0;
+}
+
+.host {
+  margin-bottom: 0;
+}
+
+.tag-div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag-btn {
+  padding: 4% 6%;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #f13858;
+  color: white;
+}
+
+.event-rightside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  gap: 1rem;
+  width: 25%;
+}
+
+.detail-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #feffff;
+  padding: 8% 5%;
+  border-radius: 0.4rem;
+  box-shadow: 0.2px 0.2px 0.1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.time-div,
+.location-div,
+.price-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.time-div p,
+.location-div p,
+.price-div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.detail-speakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.speakers-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #feffff;
+  width: 80%;
+  height: 100%;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 1px 0.1px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-card p {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.speaker-img {
+  /* margin-top: 10%; */
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rsvp-btn {
+  align-self: center;
+  margin-top: 3%;
+  padding: 2% 7%;
+  font-weight: 600;
+  border: none;
+  background-color: #f13858;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+/* RSVP  */
+
+.rsvp-outer {
+  align-items: center;
+  background-color: rgba(191, 191, 191, 0.5);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+.rsvp-inner {
+  background-color: white;
+  width: 27rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border-radius: 0.6rem;
+  text-align: left;
+  padding-left: 4%;
+  margin-left: -4%;
+}
+
+.rsvp-card {
+  width: 92%;
+  /* gap: 0.3rem; */
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 2% 2%; */
+}
+
+.rsvp-desc {
+  margin-top: 0;
+  opacity: 0.6;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 3%;
+}
+
+.rsvp-card input {
+  padding: 2% 4%;
+}
+
+.rsvp-card p {
+  opacity: 0.6;
+}
+
+.rsvp-card button {
+  padding: 2.3% 7%;
+  font-size: medium;
+  font-weight: 600;
+  border: none;
+  background-color: #f13858;
+  color: white;
+  border-radius: 0.4rem;
 }
